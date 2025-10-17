@@ -158,6 +158,36 @@ Template files are provided to help with setup:
 4. Push to the branch
 5. Open a pull request
 
+## Deployment
+
+### GitHub Pages Deployment
+
+1. Build the application:
+   ```bash
+   cd frontend
+   npm run build
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+### Manual Deployment
+
+1. Build the application:
+   ```bash
+   cd frontend
+   npm run build
+   ```
+
+2. The built files will be in the `dist` directory, which can be deployed to any static hosting service.
+
+### Environment for Production
+
+Make sure to set the appropriate environment variables for your production environment:
+- `VITE_API_URL` should point to your backend API URL
+
 ## License
 
 This project is licensed under the MIT License.

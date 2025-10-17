@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
     }
   },
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH || "/SyncDoc_mvp",
+  base: "/", // For deployment, use root path
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
