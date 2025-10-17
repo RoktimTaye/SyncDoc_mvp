@@ -17,7 +17,8 @@ export default defineConfig(({ mode }) => ({
       }
     }
   },
-  plugins: [react()], // Removed componentTagger plugin
+  plugins: [react()],
+  base: process.env.VITE_BASE_PATH || "/SyncDoc_mvp",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
